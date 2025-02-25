@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="Pt-Br" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Consulta Receita Federal</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="/styles/button.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="/styles/form.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/menu_mobile.css">
+    <link rel="stylesheet" href="/styles/style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="header__brand">
+            <img src="/image/logoLigth.png">
+        </div>
+        <div class="header__toggle">
+            <i id="toggleTheme" class="bi-moon-stars"></i>
+        </div>
+
+
+    </header>
+
+    <nav class="menu--mobile">
+        <ul class="menu menu--mobile">
+            <li class="menu__item">
+                <a class="menu__link active" href="#home">
+                    <i class="menu__icon bi bi-house-door"></i>
+                    <span class="menu__text">Home</span>
+                </a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="#projetos">
+                    <i class="menu__icon bi bi-window-stack"></i>
+                    <span class="menu__text">Outros Projetos</span>
+                </a>
+            </li>
+
+            <li class="menu__item">
+                <a class="menu__link" href="#sobre">
+                    <i class="menu__icon bi bi-shield"></i>
+                    <span class="menu__text">Sobre a Devland</span>
+                </a>
+            </li>
+
+            <li class="menu__item">
+                <a class="menu__link" href="#contato">
+                    <i class="menu__icon bi bi-envelope"></i>
+                    <span class="menu__text">Contato</span>
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+
+
+    <main id="main">
+        <h1 id="form-title">Consulta</h1>
+        <form id="consulta-Form" class="form-box" novalidate>
+            <fieldset class="form-group">
+                <label class="campo__etiqueta" for="consulta">
+                    Pesquise por CNPJ ou Razão Social:
+                </label>
+                <input class="campo__escrita" type="text" name="consulta" id="consulta" placeholder="Digite o CNPJ ou Razão Social">
+                <div class="mensagem-erro"></div>
+            </fieldset>
+            <div class="form-button-box">
+                <button class="form__button" type="submit" id="submitButton" disabled>
+                    Consultar
+                </button>
+            </div>
+        </form>
+    </main>
+
+        <footer>
+            <div class="footer-Box">
+                <h3>Desenvouvido por Devland 2025</h3>
+
+                <div id="Social-Box">
+                    <a class="menu__link" href="#sobre">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a class="menu__link" href="#sobre">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a class="menu__link" href="#sobre">
+                        <i class="bi bi-github"></i>
+                    </a>
+
+                    <a class="menu__link" href="#sobre">
+                        <i class="bi bi-globe2"></i>
+                    </a>
+                </div>
+
+
+            </div>
+        </footer>
+
+
+        <script src="scripts/DarkLigth.js"></script>
+        <script src="scripts/script.js"></script>
+        <script src="scripts/ValidaCNPJ.js"></script>
+
+</body>
+
+</html>
