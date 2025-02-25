@@ -1,13 +1,14 @@
 main {
-    background-color: var(--secondary-bg-collor);
+    flex-grow: 0;
+    background-color: var(--secondary-bg-color);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 20px;
     box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.08);
     width: 75%;
-    height: 600px;
+    height: auto;
+    overflow-y: hidden;
     padding: 2rem;
     margin: 2rem auto;
-    overflow: auto;
   }
   
   main h1 {

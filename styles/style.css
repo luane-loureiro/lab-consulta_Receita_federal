@@ -1,46 +1,50 @@
 * {
-    margin: 0;
-    padding: 0;
-    border: none;
-    box-sizing: border-box;
-    vertical-align: baseline;
-    list-style: none;
-    font-size: 1.125rem;
-    font-weight: 400;
-  }
-  
-  :root,
-  :root[data-theme='dark'] {
-    --primary-collor: #D0005A;
-    --primary-bg-collor: #000;
-    --secondary-bg-collor: #23020f;
-    --title-color: #fff;
-    --text-color: #fff;
-    --text-color-footer: #000;
-    --button-color: #846874;
-    --button-text-color:#fff;
-    --icon-color: #fff;
-    --icon-link-color:#D0005A;
-  }
-  
-  :root[data-theme='light'] {
-    --primary-collor: #D0005A;
-    --primary-bg-collor: #fff;
-    --secondary-bg-collor: #F6F6F6;
-    --title-color: #000;
-    --text-color: #000;
-    --text-color-footer: #fff;
-    --button-color: #846874;
-    --button-text-color:#fff;
-    --icon-color: #000;
-    --icon-link-color:#D0005A;
-  }
-  
-  body {
-    display: flex;
-    flex-direction: column;
-    color: var(--text-color);
-    background-color: var(--primary-bg-collor);
-    font-family: "Montserrat-Regular", sans-serif;
-    transition: ease-in-out 0.6s;
-  }
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  vertical-align: baseline;
+  list-style: none;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+:root,
+:root[data-theme='dark'] {
+  --primary-color: #D0005A;
+  --primary-bg-color: #000;
+  --secondary-bg-color: #664b56;
+  --title-color: #fff;
+  --text-color: #fff;
+  --text-color-footer: #000;
+  --button-color: #846874;
+  --button-text-color: #fff;
+  --icon-color: #fff;
+  --icon-link-color: #D0005A;
+  --imagem-fundo: url('/image/logo_dark.png');
+}
+
+:root[data-theme='light'] {
+  --primary-color: #D0005A;
+  --primary-bg-color: #fff;
+  --secondary-bg-color: #F6F6F6;
+  --title-color: #000;
+  --text-color: #000;
+  --text-color-footer: #fff;
+  --button-color: #846874;
+  --button-text-color: #fff;
+  --icon-color: #000;
+  --icon-link-color: #D0005A;
+  --imagem-fundo: url('/image/logo_light.png');
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  color: var(--text-color);
+  background-color: var(--primary-bg-color);
+  font-family: "Montserrat-Regular", sans-serif;
+  transition: ease-in-out 0.6s;
+}

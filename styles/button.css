@@ -1,7 +1,7 @@
 .form__button {
     display: block;    
     text-align: center;      
-    background-color: var(--primary-collor);
+    background-color: var(--primary-color);
     color: var(--text-color-footer);
     font-weight: 600;
     border-radius: 1rem;

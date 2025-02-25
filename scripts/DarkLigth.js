@@ -1,14 +1,17 @@
-const toggleTheme = document.getElementById("toggleTheme");
-const rootHtml = document.documentElement
+const toggleTheme = document.getElementById('toggleTheme');
+const htmlElement = document.documentElement;
+const logo = document.getElementById('logo');
 
+toggleTheme.addEventListener('click', () => {
+  const currentTheme = htmlElement.getAttribute('data-theme');
 
-function changeTheme(){
-  const currentTheme = rootHtml.getAttribute("data-theme");
-
-  currentTheme === "dark" ? rootHtml.setAttribute("data-theme", "light") : rootHtml.setAttribute("data-theme", "dark")
-
-  toggleTheme.classList.toggle("bi-sun")
-  toggleTheme.classList.toggle("bi-moon-stars")
-}
-
-toggleTheme.addEventListener("click", changeTheme);
+  if (currentTheme === 'light') {
+    htmlElement.setAttribute('data-theme', 'dark');
+    toggleTheme.classList.replace('bi-moon-stars', 'bi-sun');
+    logo.src = '/image/logo_dark.png'; // Logo para o tema dark
+  } else {
+    htmlElement.setAttribute('data-theme', 'light');
+    toggleTheme.classList.replace('bi-sun', 'bi-moon-stars');
+    logo.src = '/image/logo_light.png'; // Logo para o tema light
+  }
+});

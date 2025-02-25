@@ -98,9 +98,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.getElementById("consulta-Form").addEventListener("submit", function (e) {
         e.preventDefault();
+
         if (!submitButton.disabled) {
             const valor = campoInput.value.trim();
+
+            // Verifica se é CNPJ ou Razão Social
             const tipoConsulta = /^\d+$/.test(valor) ? "CNPJ" : "Razão Social";
+
+            // Exibe no console o tipo de consulta e o valor digitado
+            alert(`Tipo de consulta: ${tipoConsulta}`);
+            alert(`Valor digitado: ${valor}`);
 
             const listaResposta = {
                 tipo: tipoConsulta,

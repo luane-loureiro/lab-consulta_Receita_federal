@@ -1,24 +1,16 @@
 form{
   display: flex;
   flex-direction: column;
-  height: 50vh;
+  height: 85%;
   padding: 1rem 0;
+  overflow-y: hidden;
 }
 
-#form-campos{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-}
-
-.form-group {
-  width: 48%;
-}
 
 .campo__etiqueta {
   font-weight: 500;
   line-height: 20px;
+
 }
 
 .campo__escrita {
@@ -28,10 +20,13 @@ form{
   padding: 1rem;
   margin-top: 0.5em;
   box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.06);
+
+
 }
 
 .campo__escrita:focus {
-  border: 2px solid var(--primary-collor);
+  border: 2px solid var(--primary-color);
+
 }
 
 .mensagem-erro {
@@ -51,6 +46,7 @@ form{
   justify-content: flex-start;
   align-items: flex-end;
   height: 100%; 
+
 }
 
 
