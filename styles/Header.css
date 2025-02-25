@@ -10,7 +10,7 @@ header {
   
  
   header .header__brand img {
-    height: 100px;             
+    height: 6.25rem;             
     width: auto;
     transition: all 0.3s ease; 
   }

@@ -41,7 +41,7 @@
     transform: scale(1.3);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
     .menu--mobile {
         display: none;
     }
